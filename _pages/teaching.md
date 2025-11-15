@@ -1,12 +1,14 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
+title: Teaching
+description: 
+nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## **Florida Atlantic University**
 
-Organize your courses by years, topics, or universities, however you like!
+- CAP 6629 — Reinforcement Learning (Spring 2025, Fall 2025) (Teaching Assistant)
+- COT 6405 — Analysis of Algorithms (Spring 2024, Fall 2024) (Teaching Assistant)
+- CAP 5625 — Computational Foundations of AI (Summer 2025) (Teaching Assistant)

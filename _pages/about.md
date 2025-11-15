@@ -1,34 +1,42 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Ph.D. Candidate. <a href='https://www.fau.edu/'>Floria Atlantic University</a>.
+# subtitle:
+#   Ph.D. Candidate \\
+#   Graduate Teaching/Research Assistant
+#   Department of Electrical Engineering and Computer Science
+#   Florida Atlantic University
+  
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Email: yr.pang@outlook.com</p>
+    <p><a href='https://scholar.google.com/citations?user=0E9U9HIAAAAJ&hl=en'>Google Scholar</p> |
+    <p><a href='https://www.linkedin.com/in/yiran-pang-16522924b/'>Linkedin</p>
+# <p><a href='https://github.com/yiranpang'>Github</p>
+    
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. candidate in Computer Science at Florida Atlantic University, advised by Prof. Zhen Ni and Prof. Xiangnan Zhong. My research spans federated learning, reinforcement learning, large language models, and computer vision, with a focus on developing robust, efficient, and personalized learning systems for real-world applications. I work on both theoretical algorithm design—such as dual-branch federated learning architectures and personalized reinforcement learning—and practical systems including soft-magnetic FMG prosthetic sensing, mobile robotics, and intelligent surveillance.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My recent work explores how multi-domain heterogeneity, agent variability, and external knowledge sources affect learning efficiency and reliability. I aim to design models that are not only performant, but also adaptive, interpretable, and capable of generalizing across environments. I have published in top venues including AAAI, IJCNLP–AACL, IJCNN, ICDMW, and IEEE IoT-J, and have contributed to interdisciplinary projects in healthcare, robotics, and smart surveillance.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond research, I serve as a teaching assistant for multiple graduate-level courses in reinforcement learning, algorithms, and AI foundations, and actively participate in academic service through peer review for IEEE and other journals.

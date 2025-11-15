@@ -1,65 +1,54 @@
 ---
 layout: page
-title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+title: Projects
+description: Selected research and engineering projects.
+nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
 
-{% else %}
+### **Wearable Soft Magnetic Sensor Arrays for Robust FMG Recognition**  
+**2025 – Present**
 
-<!-- Display projects without categories -->
+- Building upon a soft-magnetic FMG prosthetic sensing system for real-time muscle pattern recognition  
+- Developing algorithms to handle sensor displacement and subject variability due to different wearing positions  
+- Exploring OOD detection and cross-domain adaptation methods to improve robustness and classification accuracy  
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+---
 
-  <!-- Generate cards for each project -->
+### **Intelligent Data Analysis and Decision System for Construction Sites**  
+**2022**
 
-{% if page.horizontal %}
+- Implemented real-time safety compliance inspection using YOLO for unsafe behaviors and warning-sign detection  
+- Designed server-side multi-stream video scheduling and parallel detection interfaces for early-warning analytics  
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+---
+
+### **Anti-Forgery Code Identification System for Cigarette Packaging**  
+**2021**
+
+- Built a commercial-grade 32-bit CRNN-based recognition system for transparent laser anti-counterfeiting codes  
+- Migrated PyTorch models (CRNN, CTPN, YOLO, DBNet) to NCNN through ONNX  
+- Optimized C++ inference pipelines for cross-platform deployment  
+- Integrated C++ and Java via JNI for Android and WeChat mini-program applications  
+
+---
+
+### **Recognition System for Traditional Chinese Medicine Pieces**  
+**2021**
+
+- Developed a ResNet-based classification and quality-grading model  
+- Improved accuracy from 79% → 96.9% via dataset curation, augmentation, and iterative refinement  
+- Deployed a lightweight network service for mobile access  
+
+---
+
+### **Big Data Safety Monitoring and Management System for Tourism**  
+**2019**
+
+- Enhanced SlowFast-based violence recognition model (↑ 5% accuracy) for real-time deployment  
+- Improved crowd-counting accuracy by 30% through algorithmic optimization  
+- Developed abnormal-crowd detection and real-time alerting functions for high-risk scenes  
+
+

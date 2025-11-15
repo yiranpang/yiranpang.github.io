@@ -136,34 +136,6 @@
   google_scholar_id={W7OEmFMy1HYC},
   selected=true}
 ---
-@article{wang2024smart,
-  title={Smart Expert System: Large Language Models as Text Classifiers},
-  author={Wang, Zhiqiang and Pang, Yiran and Lin, Yanbin},
-  journal={arXiv e-prints},
-  pages={arXiv--2405},
-  year={2024},
-  abstract={Text classification is a fundamental task in Natural Language Processing (NLP), and the advent of Large Language Models (LLMs) has revolutionized the field. This paper introduces the Smart Expert System, a novel approach that leverages LLMs as text classifiers. The system simplifies the traditional text classification workflow, eliminating the need for extensive preprocessing and domain expertise. The performance of several LLMs, machine learning (ML) algorithms, and neural network (NN) based structures is evaluated on four datasets. Results demonstrate that certain LLMs surpass traditional methods in sentiment analysis, spam SMS detection and multi-label classification. Furthermore, it is shown that the system’s performance can be further enhanced through few-shot or fine-tuning strategies, making the fine-tuned model the top performer across all datasets. Source code and datasets are available in this GitHub repository: https://github.com/yeyimilk/llm-zero-shot-classifiers.},
-  keywords={Large Language Models, Text Classification, Natural Language Processing, Smart Expert Systems, Few-Shot Learning, Fine-Tuning, Chat GPT-4, Llama3.},
-  doi={10.48550/arXiv.2405.10523},
-  google_scholar_id={YsMSGLbcyi4C},
-  selected=true
-}
----
-@article{PANG2025129550,
-title = {A fast federated reinforcement learning approach with phased weight-adjustment technique},
-journal = {Neurocomputing},
-volume = {626},
-pages = {129550},
-year = {2025},
-issn = {0925-2312},
-doi = {https://doi.org/10.1016/j.neucom.2025.129550},
-url = {https://www.sciencedirect.com/science/article/pii/S092523122500222X},
-author = {Yiran Pang and Zhen Ni and Xiangnan Zhong},
-keywords = {Federated reinforcement learning, Aggregation coefficient, Communication efficiency, Convergence speed, Environment heterogeneity, Value-clipping strategy},
-abstract = {Federated reinforcement learning (FRL) enables multiple agents to learn collaboratively without directly sharing their local data. This method addresses the data privacy concerns in the distributed systems. However, FRL faces challenges such as high communication costs, since it requires extensive interactions to achieve satisfied performance. Therefore, this paper develops a fast FRL method with a dynamic aggregation coefficient to reduce the communication load during the learning process. Diverging from traditional FRL techniques which rely on static averaging, our approach begins by setting the initial aggregation coefficient to the logarithm of the number of participating agents. This elevation can enhance the early integration of updates from distributed agents and facilitate a rapid initial learning phase. As communications progress, the aggregation coefficient linearly decreases, transitioning to an average aggregation by the end of the specified interval. This gradual reduction aligns individual learning updates more closely over time, shifting towards a unified global learning model. Furthermore, we implement a value-clipping strategy to constrain global updates within a predefined safe range, thus safeguarding against the potential overflow issues. The aggregation coefficient stabilizes after the initial aggressive integration phase to ensure the training stability. The boundedness analysis of the model aggregation confirms that, despite the high initial coefficient, the parameters of the global model remain within the manageable limits on the FRL server. This strategy is applicable to both tabular and deep learning methods. We validate the designed algorithm on navigation and control tasks, including heterogeneous environments where distinct state transitions and dynamics are designed for each agent. The experimental results demonstrate that our proposed approach achieves faster convergence across various environments.},
-google_scholar_id={eQOLeE2rZwMC},
-selected=true}
----
 @INPROCEEDINGS{10917961,
   author={Wang, Zhiqiang and Pang, Yiran and Lin, Yanbin and Zhu, Xingquan},
   booktitle={2024 IEEE International Conference on Data Mining Workshops (ICDMW)}, 
@@ -189,6 +161,41 @@ selected=true}
   selected=false
   }
 ---
+@inproceedings{Pang2025IJCNLP,
+  author    = {Yiran Pang and Yiheng Zhao and Zhuopu Zhou and Tingkai Hu and Ranxin Hou},
+  title     = {Is OpenVLA Truly Robust? A Systematic Evaluation of Positional Robustness},
+  booktitle = {Proceedings of the International Joint Conference on Natural Language Processing and 
+                Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP--AACL)},
+  year      = {2025},
+  abstract  = {Federated reinforcement learning (FedRL) enables multiple agents to collaboratively train a global policy without sharing raw data, making it ideal for privacy-sensitive applications. However, FedRL faces challenges in heterogeneous environments where differing state-transition dynamics lead to nonidentical input distributions and imbalanced parameter updates during aggregation. Therefore, this paper develops a personalized observation normalization (PON) method, allowing each agent to locally normalize raw state inputs using a continuously updated running mean and variance. This design ensures consistent scaling of local feature without overshadowing across agents during aggregation. Furthermore, we demonstrate that sharing normalization parameters across agents is ineffective due to the diverse local input distributions, which highlights the necessity of personalized statistics. Experiments on heterogeneous MuJoCo tasks show that our developed PON accelerates training and achieves superior performance compared to baseline methods.},
+  selected=true
+}
+---
+@inproceedings{Pang2025Personalized,
+  author={Pang, Yiran and Ni, Zhen and Zhong, Xiangnan},
+  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)},
+  title={Personalized Observation Normalization for Federated Reinforcement Learning in Simulation Environments with Heterogeneity},
+  year={2025},
+  abstract={Federated reinforcement learning (FedRL) enables multiple agents to collaboratively train a global policy without sharing raw data, making it ideal for privacy-sensitive applications. However, FedRL faces challenges in heterogeneous environments where differing state-transition dynamics lead to non-identical input distributions and imbalanced parameter updates during aggregation. Therefore, this paper develops a personalized observation normalization (PON) method, allowing each agent to locally normalize raw state inputs using a continuously updated running mean and variance. This design ensures consistent scaling of local feature without overshadowing across agents during aggregation. Furthermore, we demonstrate that sharing normalization parameters across agents is ineffective due to the diverse local input distributions, which highlights the necessity of personalized statistics. Experiments on heterogeneous MuJoCo tasks show that our developed PON accelerates training and achieves superior performance compared to baseline methods. },
+  keywords={Federated Reinforcement Learning, Heterogeneous Environments, Observation Normalization, Personalized Federated Reinforcement Learning, and Distribution Shift.},
+  selected=true
+}
+---
+@article{PANG2025129550,
+title = {A fast federated reinforcement learning approach with phased weight-adjustment technique},
+journal = {Neurocomputing},
+volume = {626},
+pages = {129550},
+year = {2025},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2025.129550},
+url = {https://www.sciencedirect.com/science/article/pii/S092523122500222X},
+author = {Yiran Pang and Zhen Ni and Xiangnan Zhong},
+keywords = {Federated reinforcement learning, Aggregation coefficient, Communication efficiency, Convergence speed, Environment heterogeneity, Value-clipping strategy},
+abstract = {Federated reinforcement learning (FRL) enables multiple agents to learn collaboratively without directly sharing their local data. This method addresses the data privacy concerns in the distributed systems. However, FRL faces challenges such as high communication costs, since it requires extensive interactions to achieve satisfied performance. Therefore, this paper develops a fast FRL method with a dynamic aggregation coefficient to reduce the communication load during the learning process. Diverging from traditional FRL techniques which rely on static averaging, our approach begins by setting the initial aggregation coefficient to the logarithm of the number of participating agents. This elevation can enhance the early integration of updates from distributed agents and facilitate a rapid initial learning phase. As communications progress, the aggregation coefficient linearly decreases, transitioning to an average aggregation by the end of the specified interval. This gradual reduction aligns individual learning updates more closely over time, shifting towards a unified global learning model. Furthermore, we implement a value-clipping strategy to constrain global updates within a predefined safe range, thus safeguarding against the potential overflow issues. The aggregation coefficient stabilizes after the initial aggressive integration phase to ensure the training stability. The boundedness analysis of the model aggregation confirms that, despite the high initial coefficient, the parameters of the global model remain within the manageable limits on the FRL server. This strategy is applicable to both tabular and deep learning methods. We validate the designed algorithm on navigation and control tasks, including heterogeneous environments where distinct state transitions and dynamics are designed for each agent. The experimental results demonstrate that our proposed approach achieves faster convergence across various environments.},
+google_scholar_id={eQOLeE2rZwMC},
+selected=true}
+---
 @inproceedings{pang2025integration,
   title={Integration of a new layer normalization process into federated reinforcement learning for environments with heterogeneous attribute spaces},
   author={Pang, Yiran and Ni, Zhen and Zhong, Xiangnan},
@@ -202,12 +209,12 @@ selected=true}
   selected=true
 }
 ---
-@inproceedings{Pang2025Personalized,
-  author={Pang, Yiran and Ni, Zhen and Zhong, Xiangnan},
-  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)},
-  title={Personalized Observation Normalization for Federated Reinforcement Learning in Simulation Environments with Heterogeneity},
-  year={2025},
-  abstract={Federated reinforcement learning (FedRL) enables multiple agents to collaboratively train a global policy without sharing raw data, making it ideal for privacy-sensitive applications. However, FedRL faces challenges in heterogeneous environments where differing state-transition dynamics lead to non-identical input distributions and imbalanced parameter updates during aggregation. Therefore, this paper develops a personalized observation normalization (PON) method, allowing each agent to locally normalize raw state inputs using a continuously updated running mean and variance. This design ensures consistent scaling of local feature without overshadowing across agents during aggregation. Furthermore, we demonstrate that sharing normalization parameters across agents is ineffective due to the diverse local input distributions, which highlights the necessity of personalized statistics. Experiments on heterogeneous MuJoCo tasks show that our developed PON accelerates training and achieves superior performance compared to baseline methods. },
-  keywords={Federated Reinforcement Learning, Heterogeneous Environments, Observation Normalization, Personalized Federated Reinforcement Learning, and Distribution Shift.},
+@inproceedings{Pang2026AAAI,
+  author    = {Pang, Yiran and Ni, Zhen and Zhong, Xiangnan},
+  title     = {Decoupling Shared and Personalized Knowledge: A Dual-Branch Federated Learning Framework for Multi-Domain with Non-IID Data},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-26)},
+  year      = {2026},
+  abstract  = {Federated learning (FL) enables collaborative model training without centralizing data. In multi-domain scenarios with non-identically and independently distributed (non-IID) data, prediction performance is often hindered by catastrophic forgetting of specialized local knowledge and negative transfer from conflicting client updates. To address these challenges, we propose a personalized FL framework with dual-branch (pFedDB) structure and a two-phase training protocol. The dual-branch architecture separates the model into a shared branch for cross-client aggregation and a private branch that remains on each local client. The private branch is never overwritten by server updates, which prevents the catastrophic forgetting of domain-specific knowledge. This structure also significantly reduces communication overhead per round as only the shared branch is transmitted. To mitigate negative transfer, our two-phase protocol first establishes a personalized knowledge anchor by training a single-branch expert model on each client’s local data. In the second phase, the locally trained model is cloned to initialize private and shared branches. Only the shared branch is aggregated in federated training. This process enables the shared branch to learn a general representation that complements the established local expertise. This design consistently improves the performance of every client over its single-domain baseline, overcoming the challenge of negative transfer among clients. Experiments on our new Chest-X-Ray-4 suite and three public benchmarks show that the proposed pFedDB method obtains 30% saving in communication overhead per round and competitive or better accuracy performance than recent FL methods.},
+  code      = {https://github.com/yiranpang/pFedDB},
   selected=true
 }
