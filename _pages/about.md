@@ -8,7 +8,6 @@ subtitle: Ph.D. Candidate. <a href='https://www.fau.edu/'>Floria Atlantic Univer
 #   Graduate Teaching/Research Assistant
 #   Department of Electrical Engineering and Computer Science
 #   Florida Atlantic University
-  
 
 profile:
   align: right
@@ -19,8 +18,6 @@ profile:
     <p><a href='https://scholar.google.com/citations?user=0E9U9HIAAAAJ&hl=en'>Google Scholar</p> |
     <p><a href='https://www.linkedin.com/in/yiran-pang-16522924b/'>Linkedin</p>
 # <p><a href='https://github.com/yiranpang'>Github</p>
-    
-
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
