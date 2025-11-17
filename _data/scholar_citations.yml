@@ -1,0 +1,21 @@
+# 手动维护的 Google Scholar 引用数缓存
+# 格式: article_id: citation_count
+#
+# 使用说明:
+# 1. 访问 Google Scholar 个人主页获取文章的引用数
+# 2. article_id 可以从文献的 BibTeX 或 Google Scholar URL 中获取
+# 3. citation_count 直接填写数字即可（不需要 K/M 等单位，程序会自动格式化）
+#
+# 最后更新: 2025-11-17 22:09:24
+
+2osOgNQ5qMEC: 31
+9yKSN-GCB0IC: 13
+IjCSPb-OGe4C: 76
+Tyk-4Ss8FVUC: 14
+UeHWp8X0CEIC: 19
+W7OEmFMy1HYC: 40
+WF5omc3nYNoC: 35
+d1gkVwhDpl0C: 54
+eQOLeE2rZwMC: 2
+qjMakFHDy7sC: 8
+u-x6o8ySG0sC: 10

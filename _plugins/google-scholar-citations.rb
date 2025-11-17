@@ -1,6 +1,7 @@
 require "active_support/all"
 require 'nokogiri'
 require 'open-uri'
+require 'yaml'
 
 module Helpers
   extend ActiveSupport::NumberHelper
@@ -9,6 +10,7 @@ end
 module Jekyll
   class GoogleScholarCitationsTag < Liquid::Tag
     Citations = { }
+    @@manual_citations = nil
 
     def initialize(tag_name, params, tokens)
       super
@@ -22,6 +24,30 @@ module Jekyll
 
       if @article_id.nil? || @article_id.empty?
         puts "Invalid article_id provided"
+      end
+
+      # Load manual citations cache once
+      if @@manual_citations.nil?
+        load_manual_citations
+      end
+    end
+
+    def load_manual_citations
+      begin
+        # Get the Jekyll site root directory
+        site_root = File.expand_path('../..', __dir__)
+        cache_file = File.join(site_root, '_data', 'scholar_citations.yml')
+        
+        if File.exist?(cache_file)
+          @@manual_citations = YAML.load_file(cache_file) || {}
+          puts "Loaded manual citations cache with #{@@manual_citations.keys.length} entries"
+        else
+          @@manual_citations = {}
+          puts "No manual citations cache found at #{cache_file}"
+        end
+      rescue => e
+        @@manual_citations = {}
+        puts "Error loading manual citations cache: #{e.message}"
       end
     end
 
@@ -72,8 +98,15 @@ module Jekyll
         # Handle any errors that may occur during fetching
         citation_count = "N/A"
 
-        # Print the error message including the exception class and message
-        puts "Error fetching citation count for #{article_id} in #{article_url}: #{e.class} - #{e.message}"
+        # Try to use manual citation cache as fallback
+        if @@manual_citations && @@manual_citations[article_id]
+          manual_count = @@manual_citations[article_id].to_i
+          citation_count = Helpers.number_to_human(manual_count, :format => '%n%u', :precision => 2, :units => { :thousand => 'K', :million => 'M', :billion => 'B' })
+          puts "Using manual citation count for #{article_id}: #{citation_count} (from cache)"
+        else
+          puts "Error fetching citation count for #{article_id} in #{article_url}: #{e.class} - #{e.message}"
+          puts "No manual citation found in cache for #{article_id}"
+        end
       end
 
       GoogleScholarCitationsTag::Citations[article_id] = citation_count
